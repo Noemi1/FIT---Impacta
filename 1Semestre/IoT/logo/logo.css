@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.robo-content {
+    width: 100vw;
+    height: 100vh;
+    padding:  2rem;
+    box-sizing: border-box;
+}
+.prenchimento {
+    background: #FF5722;
+    /* background: #02a9e0; */
+    position: absolute;
+    width: calc(500px );
+    height: calc(500px);
+    border-radius: 50%;
+}
+.sombra {
+    position:  absolute;
+    width: calc(500px - 30px);
+    height: calc(500px - 30px);
+    background: #f78d2a;
+    /* background: #75c5f8; */
+    border-radius:  50%;
+    left:  0;
+    top:  0;
+}
+.borda {
+    position:  absolute;
+    border: 20px solid #540000;
+    /* border: 20px solid #061d2d; */
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    border-radius:  50%;
+    top: -20px;
+    left: -20px;
+    z-index:  1;
+}
+.olhos-content {
+    width: 400px;
+    height: 220px;
+    background: #540000;
+    /* background: #071e2e; */
+    margin: 140px auto 0;
+    border-top-left-radius: 140px;
+    border-top-right-radius: 140px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display:  flex;
+    justify-content: space-between;
+    overflow:  hidden;
+}
+.olho {
+    width: 100px;
+    height: 100px;
+    border: 17px white solid;
+    border-radius: 50%;
+    margin-top: 30px;
+    display:  flex;
+    align-items:  center;
+    justify-content:  center;
+    position:  relative;
+    background: #540000;
+}
+.a {
+    margin-left: 50px;
+}
+.b {
+    margin-right: 50px;
+}
+.bolinha {
+    background:  white;
+    width: 40px;
+    height: 40px;
+    border-radius:  50%;
+}
+.tamp {
+    position:  absolute;
+    width: 140px;
+    background: #540000;
+    /* background: inherit; */
+    height: 80px;
+}
+.b .tamp {
+    top: -23%;
+    transform: rotate(-30deg);
+    left: -40%;
+}
+.a .tamp {
+    top: -24%;
+    transform: rotate(30deg);
+    left: 0%;
+}
+.boca {
+    border-radius: 50%;
+    width: 150px;
+    height: 40px;
+    border: 14px #540000 solid;
+    /* border: 14px #071e2e solid; */
+    margin: 10px auto 0;
+    border-bottom: none;
+    /* display:  none; */
+}
+.boca .tamp {
+    background: #f78d2a;
+    height: 20px;
+    width: 260px;
+    left: 21%;
+    top: 83%;
+}
+.sombra::after {
+    content:  '';
+    position:  absolute;
+    width: 420px;
+    height: 400px;
+    background: #f1e3d7;
+    border-radius:  50%;
+    z-index: 0;
+    top: 5%;
+    left: 3%;
+}
+.sombra::before {
+    content:  '';
+    position:  absolute;
+    width: 440px;
+    height: 400px;
+    background: #f78d2a;
+    border-radius:  50%;
+    z-index: 1;
+    top: 8%;
+    left: 3%;
+}

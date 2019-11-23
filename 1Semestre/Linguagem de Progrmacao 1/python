@@ -1,0 +1,12 @@
+def matriz (linha, coluna, x):
+    for i1 in range (1, linha+1):
+        for i2 in range (1, coluna+1):
+            print (x, end='')
+        print ()
+    return
+
+linha = int (input())
+coluna = int (input())
+x = input()
+while matriz (linha, coluna, x):
+    break
